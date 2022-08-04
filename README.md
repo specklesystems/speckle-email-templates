@@ -4,40 +4,40 @@
 
 ## Introduction
 
-This section should hold a quick intro on what this repo's about. For example:
-
-This repo holds Speckle's:
-
-- Default [Code of Conduct](.github/CODE_OF_CONDUCT.md),
-- Default [Contribution Guidelines](.github/CONTRIBUTING.md),
-- README template (you're reading it now),
-- Default [Issue Template](.github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md),
-- Default [Pull Request Template](.github/PULL_REQUEST_TEMPLATE/PR_TEMPLATE.md),
-- OSS License (Apache 2.0)
-
-Either copy paste the parts that are useful in existing repos, or use this as a base when creating a new repository.
-
-## Documentation
-
-Comprehensive developer and user documentation can be found in our:
-
-#### 📚 [Speckle Docs website](https://speckle.guide/dev/)
-
-## This Readme Template
-
-Is rather straightforward. It includes several default sections and one section that requires special attention.
-
-Default sections:
-
-- Badges: has several default social badges. Feel free to add more.
-- Developing & Debugging - needs filling in!
-- Community - can be left as is.
-
-**License section**: If this is a pure OSS repo, like Core, remove everything after the first phrase. Otherwise, we need to plan ahead before releasing and make sure we're covered.
+Uses the [MJML](https://mjml.io/) framework to build e-mail templates without dealing with a lot of the complexity that often arises out of doing so.
 
 ## Developing & Debugging
 
-This doesn't make sense here, but in general, we should try to provide a small "how to" guide on local development and debugging, as it lowers the barrier to contributions.
+### Environment setup
+
+- Make sure you have `yarn 1.x` available globally (e.g. through corepack)
+- Make sure you have `docker-compose`
+
+### Development
+
+Use VSCode and make sure you install the recommended MJML extension. Through this extension you can will get syntax highlighting in .mjml files and also the option to trigger a live preview right from the specific .mjml file.
+
+Before development do `yarn env:up` to start the docker environment that serves a local file server. You'll need that to be able to see assets in the preview pane, cause it expects assets to be hosted somewhere and accessed through HTTP, not loaded from a relative path on your PC.
+
+The file server is accessible at `localhost:3030`, assets are served from `/assets` and built templates from `/templates`.
+
+### Building
+
+Run `yarn build` to build everything. Run `yarn watch` to build in watch mode.
+
+### Testing
+
+#### Sending out email template
+
+You can configure the MJML VSCode extension to actually send out an email of your template. To do so, make sure to configure the `mjml.mailjetAPIKey`, `mjml.mailjetAPISecret` and `mjml.mailSender` settings or `mjml.nodemailer` settings in your **user** settings.
+
+Do not save these values into the workspace settings we don't want tokens being commited to Git!
+
+Read more: https://marketplace.visualstudio.com/items?itemName=mjmlio.vscode-mjml
+
+#### Validating on multiple clients
+
+You can use a trial for one of these kinds of services: https://www.emailonacid.com/. The goal here is to evaluate that the template looks right in different kinds of e-mail clients and their versions.
 
 ## Contributing
 
@@ -49,7 +49,7 @@ The Speckle Community hangs out on [the forum](https://discourse.speckle.works),
 
 ## Security
 
-For any security vulnerabilities or concerns, please contact us directly at security[at]speckle.systems. 
+For any security vulnerabilities or concerns, please contact us directly at security[at]speckle.systems.
 
 ## License
 
