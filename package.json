@@ -1,0 +1,11 @@
+{
+  "name": "speckle-email-templates",
+  "packageManager": "yarn@3.2.2",
+  "scripts": {
+    "build": "mjml ./src/*.mjml -o ./dist/",
+    "watch": "mjml -w ./src/*.mjml -o ./dist/"
+  },
+  "devDependencies": {
+    "mjml": "^4.13.0"
+  }
+}
