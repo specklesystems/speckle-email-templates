@@ -1,5 +1,8 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[mjml]": {
     "editor.defaultFormatter": "mjmlio.vscode-mjml"
-  }
+  },
+  "mjml.previewBackgroundColor": "white",
+  "mjml.mailSubject": "Speckle Email Templates Test"
 }

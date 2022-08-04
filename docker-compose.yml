@@ -1,0 +1,9 @@
+version: '3'
+services:
+  assetserver:
+    image: flashspys/nginx-static
+    ports:
+      - 3030:80
+    volumes:
+      - ./assets:/static/assets
+      - ./dist:/static/templates

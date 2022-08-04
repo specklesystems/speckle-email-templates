@@ -1,12 +1,65 @@
 <mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica" font-size="16px" />
+    </mj-attributes>
+  </mj-head>
   <mj-body>
     <!-- Header -->
-    <mj-section>a</mj-section>
+    <mj-section background-color="linear-gradient(90deg, rgba(0,143,233,1) 0%, rgba(0,76,235,1) 100%)" padding="0">
+      <mj-column>
+        <mj-image width="100px" src="http://localhost:3030/assets/logo-slab-white.png" alt="Speckle" />
+      </mj-column>
+    </mj-section>
 
-    <!-- Body -->
-    <mj-section>a</mj-section>
+    <!-- Body - Start -->
+    <mj-section>
+      <mj-column>
+        <!-- Some example text -->
+        <mj-text>
+          <p>
+            Hello,
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor. In fermentum et sollicitudin ac. Arcu cursus vitae congue mauris rhoncus aenean. Odio ut enim blandit volutpat maecenas. Et molestie ac feugiat sed lectus. Diam vulputate ut pharetra sit amet aliquam id. Purus semper eget duis at tellus at urna condimentum mattis. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Convallis aenean et tortor at risus viverra. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. In iaculis nunc sed augue lacus viverra vitae congue.
+          </p>
+
+          <p>
+            Here's a basic <a href="#" alt="link title">link</a>.
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-button background-color="linear-gradient(90deg, rgba(0,143,233,1) 0%, rgba(0,76,235,1) 100%)" border-radius="8px" color="white" href="#" title="CTA Title">
+          Call To Action (CTA)
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Body - End -->
+    <mj-section>
+      <mj-column>
+        <!-- Some example finishing text -->
+        <mj-text>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor. In fermentum et sollicitudin ac. Arcu cursus vitae congue mauris rhoncus aenean.
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
     <!-- Footer -->
-    <mj-section>a</mj-section>
+    <mj-section padding-top="0">
+      <mj-column>
+        <mj-text font-size="14px" align="center" color="#999">
+          Sent from %SERVERNAME% at <a href="#">%SERVERURL%</a>, deployed and managed by %COMPANY%. Your admin contact is %ADMINCONTACT%.
+        </mj-text>
+      </mj-column>
+    </mj-section>
   </mj-body>
 </mjml>
