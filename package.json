@@ -2,8 +2,7 @@
   "name": "speckle-email-templates",
   "packageManager": "yarn@3.2.2",
   "scripts": {
-    "env:up": "docker-compose up -d",
-    "env:down": "docker-compose down",
+    "serve:assets": "npx http-server -p 4040",
     "build": "mjml ./src/*.mjml -o ./dist/",
     "watch": "mjml -w ./src/*.mjml -o ./dist/"
   },
