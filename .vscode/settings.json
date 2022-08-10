@@ -1,5 +1,4 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[mjml]": {
     "editor.defaultFormatter": "mjmlio.vscode-mjml"
   },

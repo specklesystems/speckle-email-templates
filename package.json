@@ -9,6 +9,5 @@
   },
   "devDependencies": {
     "mjml": "^4.13.0",
-    "prettier": "^2.7.1"
   }
 }
