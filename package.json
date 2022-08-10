@@ -8,6 +8,6 @@
     "watch": "mjml -w ./src/*.mjml -o ./dist/"
   },
   "devDependencies": {
-    "mjml": "^4.13.0",
+    "mjml": "^4.13.0"
   }
 }
