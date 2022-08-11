@@ -2,11 +2,15 @@
   "name": "speckle-email-templates",
   "packageManager": "yarn@3.2.2",
   "scripts": {
-    "serve:assets": "npx http-server -p 4040",
+    "serve:assets": "http-server -p 4040",
     "build": "mjml ./src/*.mjml -o ./dist/",
     "watch": "mjml -w ./src/*.mjml -o ./dist/"
   },
   "devDependencies": {
     "mjml": "^4.13.0"
+  },
+  "dependencies": {
+    "dev": "^0.1.3",
+    "http-server": "^14.1.1"
   }
 }
