@@ -11,15 +11,14 @@ Uses the [MJML](https://mjml.io/) framework to build e-mail templates without de
 ### Environment setup
 
 - Make sure you have `yarn 1.x` available globally (e.g. through corepack)
-- Make sure you have `docker-compose`
 
 ### Development
 
 Use VSCode and make sure you install the recommended MJML extension. Through this extension you can will get syntax highlighting in .mjml files and also the option to trigger a live preview right from the specific .mjml file.
 
-Before development do `yarn env:up` to start the docker environment that serves a local file server. You'll need that to be able to see assets in the preview pane, cause it expects assets to be hosted somewhere and accessed through HTTP, not loaded from a relative path on your PC.
+Before development do `yarn serve:assets` to start a local file server. You'll need that to be able to see assets in the preview pane, cause it expects assets to be hosted somewhere and accessed through HTTP, not loaded from a relative path on your PC.
 
-The file server is accessible at `localhost:3030`, assets are served from `/assets` and built templates from `/templates`.
+The file server is accessible at `localhost:4040`, assets are served from `/assets` and built templates from `/templates`.
 
 ### Building
 
