@@ -1,14 +1,31 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="Helvetica" font-size="16px" line-height="20px"/>
+      <mj-all font-family="Helvetica" font-size="16px" />
     </mj-attributes>
+    <mj-style inline="inline">
+      h1 {
+        font-size: 2em
+      }
+
+      h2 {
+        font-size: 1.5em
+      }
+
+      h3 {
+        font-size: 1.17em
+      }
+
+      h4 {
+        font-size: 1em
+      }
+    </mj-style>
   </mj-head>
   <mj-body>
     <!-- Header -->
     <mj-section border-radius="8px" background-color="linear-gradient(90deg, rgba(0,143,233,1) 0%, rgba(0,76,235,1) 100%)" padding="0">
       <mj-column>
-        <mj-image  width="100px" src="http://localhost:4040/assets/logo-slab-white.png" alt="Speckle" />
+        <mj-image width="100px" src="http://localhost:4040/assets/logo-slab-white.png" alt="Speckle" />
       </mj-column>
     </mj-section>
 
@@ -21,8 +38,24 @@
             Hello,
           </p>
 
+          <h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor.
+          </h1>
+
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor.
+          </h2>
+
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor.
+          </h3>
+
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor.
+          </h4>
+
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor.
           </p>
 
           <p>
@@ -61,10 +94,10 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section padding-top="20px" >
+    <mj-section padding-top="20px">
       <mj-column>
         <mj-text font-size="12px" line-height="18px" align="center" color="#e0e0e0">
-        Brought to you by <a href="https://speckle.systems" target="_blank">Speckle</a>, the Open Source Data Platform for 3D Data
+          Brought to you by <a href="https://speckle.systems" target="_blank">Speckle</a>, the Open Source Data Platform for 3D Data
         </mj-text>
       </mj-column>
     </mj-section>
