@@ -2,7 +2,7 @@
   "name": "speckle-email-templates",
   "packageManager": "yarn@3.2.2",
   "scripts": {
-    "serve:assets": "http-server -p 4040",
+    "serve": "http-server -p 4040",
     "build": "mjml ./src/*.mjml -o ./dist/",
     "watch": "mjml -w ./src/*.mjml -o ./dist/"
   },

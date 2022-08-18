@@ -1,9 +1,25 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="Helvetica" />
       <mj-all font-family="Helvetica" font-size="16px" />
     </mj-attributes>
+    <mj-style inline="inline">
+      h1 {
+        font-size: 2em
+      }
+
+      h2 {
+        font-size: 1.5em
+      }
+
+      h3 {
+        font-size: 1.17em
+      }
+
+      h4 {
+        font-size: 1em
+      }
+    </mj-style>
   </mj-head>
   <mj-body>
     <!-- Header -->
